@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Причина обращения",
+  "name": "IISPrimerПричинаОбращенияE",
+  "className": "ПричинаОбращенияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-причина",
+      "modelProjection": "ПричинаОбращенияE"
+    }
+  ]
+}

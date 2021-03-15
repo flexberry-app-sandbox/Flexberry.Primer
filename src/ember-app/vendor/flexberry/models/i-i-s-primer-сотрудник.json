@@ -1,0 +1,87 @@
+﻿{
+  "name": "IISPrimerСотрудник",
+  "modelName": "i-i-s-primer-сотрудник",
+  "className": "Сотрудник",
+  "nameSpace": "IIS.Primer",
+  "parentModelName": "i-i-s-primer-справочник",
+  "parentClassName": "Справочник",
+  "attrs": [
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "eMail",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникE",
+      "modelName": "i-i-s-primer-сотрудник",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "eMail",
+          "caption": "E mail",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "актуально",
+          "caption": "Актуально",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникL",
+      "modelName": "i-i-s-primer-сотрудник",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "eMail",
+          "caption": "E mail",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "актуально",
+          "caption": "Актуально",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

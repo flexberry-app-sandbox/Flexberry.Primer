@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-primer-справочник-e",
+  "editForm": "i-i-s-primer-справочник-e",
+  "external": false,
+  "caption": "Справочник",
+  "name": "IISPrimerСправочникL",
+  "className": "СправочникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-справочник",
+      "modelProjection": "СправочникL"
+    }
+  ]
+}

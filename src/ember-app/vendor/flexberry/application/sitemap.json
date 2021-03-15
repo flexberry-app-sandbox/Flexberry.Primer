@@ -1,0 +1,66 @@
+﻿{
+  "applicationCaption": "Primer",
+  "applicationTitle": "Primer",
+  "items": [
+    {
+      "link": null,
+      "menuName": "учет-заявок",
+      "caption": "Учет заявок",
+      "title": "Учет заявок",
+      "children": [
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-primer-сотрудник-l",
+              "menuName": null,
+              "caption": "Сотрудники",
+              "title": "Сотрудник",
+              "children": null
+            },
+            {
+              "link": "i-i-s-primer-причина-обращения-l",
+              "menuName": null,
+              "caption": "Причина обращения",
+              "title": "Причина обращения",
+              "children": null
+            },
+            {
+              "link": "i-i-s-primer-вид-обращения-l",
+              "menuName": null,
+              "caption": "Вид обращения",
+              "title": "Вид обращения",
+              "children": null
+            },
+            {
+              "link": "i-i-s-primer-тип-обращения-l",
+              "menuName": null,
+              "caption": "Тип обращения",
+              "title": "Тип обращения",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "обращения",
+          "caption": "Обращения",
+          "title": "Обращения",
+          "children": [
+            {
+              "link": "i-i-s-primer-обращение-l",
+              "menuName": null,
+              "caption": "ОбращениеL",
+              "title": "Обращение",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

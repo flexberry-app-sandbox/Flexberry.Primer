@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-primer-причина-обращения-e",
+  "editForm": "i-i-s-primer-причина-обращения-e",
+  "external": false,
+  "caption": "Причина обращения",
+  "name": "IISPrimerПричинаОбращенияL",
+  "className": "ПричинаОбращенияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-причина",
+      "modelProjection": "ПричинаОбращенияL"
+    }
+  ]
+}

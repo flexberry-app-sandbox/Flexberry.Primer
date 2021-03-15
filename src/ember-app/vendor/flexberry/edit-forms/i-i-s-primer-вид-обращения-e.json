@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТипОбращения",
+      "projection": "ТипОбращенияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Вид обращения",
+  "name": "IISPrimerВидОбращенияE",
+  "className": "ВидОбращенияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-вид-обращения",
+      "modelProjection": "ВидОбращенияE"
+    }
+  ]
+}

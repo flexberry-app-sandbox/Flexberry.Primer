@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-primer-вид-обращения-e",
+  "editForm": "i-i-s-primer-вид-обращения-e",
+  "external": false,
+  "caption": "Вид обращения",
+  "name": "IISPrimerВидОбращенияL",
+  "className": "ВидОбращенияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-вид-обращения",
+      "modelProjection": "ВидОбращенияL"
+    }
+  ]
+}

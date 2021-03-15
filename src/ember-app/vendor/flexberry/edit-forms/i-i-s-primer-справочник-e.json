@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник",
+  "name": "IISPrimerСправочникE",
+  "className": "СправочникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-справочник",
+      "modelProjection": "СправочникE"
+    }
+  ]
+}

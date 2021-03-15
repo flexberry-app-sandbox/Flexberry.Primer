@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-primer-обращение-e",
+  "editForm": "i-i-s-primer-обращение-e",
+  "external": false,
+  "caption": "Обращение",
+  "name": "IISPrimerОбращениеL",
+  "className": "ОбращениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-обращение",
+      "modelProjection": "ОбращениеL"
+    }
+  ]
+}

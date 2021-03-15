@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Тип обращения",
+  "name": "IISPrimerТипОбращенияE",
+  "className": "ТипОбращенияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-тип-обращения",
+      "modelProjection": "ТипОбращенияE"
+    }
+  ]
+}

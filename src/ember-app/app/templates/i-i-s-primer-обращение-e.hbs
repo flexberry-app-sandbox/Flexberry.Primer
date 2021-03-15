@@ -1,0 +1,225 @@
+<h3 class="ui header">{{t "forms.i-i-s-primer-обращение-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationObject "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-primer-обращение-e.номер-caption")
+      data-test-i-i-s-primer-обращение-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "номер" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-primer-обращение-e-статус="true">
+    <label>{{t "forms.i-i-s-primer-обращение-e.статус-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-primer-t-статус-обращения")
+      value=model.статус
+      class=(if (v-get validationObject "статус" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "статус" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.обратившийся
+      class=(if (v-get validationObject "обратившийся" "isInvalid") "error")
+      label=(t "forms.i-i-s-primer-обращение-e.обратившийся-caption")
+      data-test-i-i-s-primer-обращение-e-обратившийся=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "обратившийся" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.датаПоступления-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.датаПоступления
+      class=(if (v-get validationObject "датаПоступления" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-датаПоступления=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "датаПоступления" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.датаЗакрытия-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.датаЗакрытия
+      class=(if (v-get validationObject "датаЗакрытия" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-датаЗакрытия=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "датаЗакрытия" "message")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.адрес
+      class=(if (v-get validationObject "адрес" "isInvalid") "error")
+      label=(t "forms.i-i-s-primer-обращение-e.адрес-caption")
+      data-test-i-i-s-primer-обращение-e-адрес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "адрес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.телефон
+      class=(if (v-get validationObject "телефон" "isInvalid") "error")
+      label=(t "forms.i-i-s-primer-обращение-e.телефон-caption")
+      data-test-i-i-s-primer-обращение-e-телефон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "телефон" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.причина-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.причина
+      class=(if (v-get validationObject "причина" "isInvalid") "error")
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="причина"
+      projection="ПричинаОбращенияL"
+      title=(t "forms.i-i-s-primer-обращение-e.причина-caption")
+      readonly=readonly
+      componentName="причинаLookup"
+      class=(if (v-get validationObject "причина" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-причина=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "причина" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.допОбращение-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.допОбращение
+      class=(if (v-get validationObject "допОбращение" "isInvalid") "error")
+      displayAttributeName="номер"
+      autocomplete=true
+      relationName="допОбращение"
+      projection="ОбращениеL"
+      title=(t "forms.i-i-s-primer-обращение-e.допОбращение-caption")
+      readonly=readonly
+      componentName="допОбращениеLookup"
+      class=(if (v-get validationObject "допОбращение" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-допОбращение=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "допОбращение" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.ответственный-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.ответственный
+      class=(if (v-get validationObject "ответственный" "isInvalid") "error")
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="ответственный"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-primer-обращение-e.ответственный-caption")
+      readonly=readonly
+      componentName="ответственныйLookup"
+      class=(if (v-get validationObject "ответственный" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-ответственный=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "ответственный" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.типОбращения-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.типОбращения
+      class=(if (v-get validationObject "типОбращения" "isInvalid") "error")
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="типОбращения"
+      projection="ТипОбращенияL"
+      title=(t "forms.i-i-s-primer-обращение-e.типОбращения-caption")
+      readonly=readonly
+      componentName="типОбращенияLookup"
+      class=(if (v-get validationObject "типОбращения" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-типОбращения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "типОбращения" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.видОбращения-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.видОбращения
+      class=(if (v-get validationObject "видОбращения" "isInvalid") "error")
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="видОбращения"
+      projection="ВидОбращенияL"
+      title=(t "forms.i-i-s-primer-обращение-e.видОбращения-caption")
+      readonly=readonly
+      componentName="видОбращенияLookup"
+      class=(if (v-get validationObject "видОбращения" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-видОбращения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "видОбращения" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-primer-обращение-e.оператор-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.оператор
+      class=(if (v-get validationObject "оператор" "isInvalid") "error")
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="оператор"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-primer-обращение-e.оператор-caption")
+      readonly=readonly
+      componentName="операторLookup"
+      class=(if (v-get validationObject "оператор" "isInvalid") "error")
+      data-test-i-i-s-primer-обращение-e-оператор=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "оператор" "message")}}
+  </div>
+
+</form>

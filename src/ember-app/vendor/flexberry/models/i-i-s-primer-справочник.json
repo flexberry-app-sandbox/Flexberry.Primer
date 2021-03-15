@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISPrimerСправочник",
+  "modelName": "i-i-s-primer-справочник",
+  "className": "Справочник",
+  "nameSpace": "IIS.Primer",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "актуально",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправочникE",
+      "modelName": "i-i-s-primer-справочник",
+      "attrs": [
+        {
+          "name": "актуально",
+          "caption": "Актуально",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправочникL",
+      "modelName": "i-i-s-primer-справочник",
+      "attrs": [
+        {
+          "name": "актуально",
+          "caption": "Актуально",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

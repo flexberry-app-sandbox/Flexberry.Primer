@@ -1,0 +1,63 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Причина",
+      "projection": "ПричинаОбращенияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДопОбращение",
+      "projection": "ОбращениеL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Ответственный",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТипОбращения",
+      "projection": "ТипОбращенияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВидОбращения",
+      "projection": "ВидОбращенияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Оператор",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Обращение",
+  "name": "IISPrimerОбращениеE",
+  "className": "ОбращениеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-primer-обращение",
+      "modelProjection": "ОбращениеE"
+    }
+  ]
+}
